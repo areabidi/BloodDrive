@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blood Drive Poster</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+}
+
+.poster {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,.15);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.hero-text h2 {
+    color: #0c2340;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    color: #d61f26;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.hero-text h1 span {
+    color: #0c2340;
+    display: block;
+}
+
+.hero-text p {
+    color: #d61f26;
+    font-size: 2rem;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.blood-drop {
+    width: 250px;
+    height: 320px;
+    background: #d61f26;
+    clip-path: polygon(50% 0%, 100% 60%, 50% 100%, 0% 60%);
+    position: relative;
+}
+
+.blood-drop::after {
+    content: "❤";
+    position: absolute;
+    color: white;
+    font-size: 80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.red-banner {
+    background: #d61f26;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    text-align: center;
+}
+
+.red-banner div {
+    max-width: 220px;
+    font-weight: 600;
+}
+
+.details {
+    display: flex;
+    gap: 40px;
+    padding: 50px;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h3 {
+    color: #0c2340;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.section p,
+.section li {
+    color: #333;
+    line-height: 1.8;
+}
+
+.right h2 {
+    color: #d61f26;
+    margin-bottom: 20px;
+}
+
+.right ul {
+    padding-left: 20px;
+}
+
+.notice {
+    background: #ffe8e8;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 25px;
+}
+
+.footer {
+    background: #d61f26;
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer h2 {
+    font-size: 2rem;
+}
+
+.contact {
+    text-align: right;
+}
+</style>
+</head>
+<body>
+
+<div class="poster">
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>BE A HERO</h2>
+            <h1>DONATE <span>BLOOD</span></h1>
+            <p>Save Lives</p>
+        </div>
+
+        <div class="blood-drop"></div>
+    </section>
+
+    <section class="red-banner">
+        <div>
+            ❤️<br>
+            One donation can save up to 3 lives
+        </div>
+
+        <div>
+            🩸<br>
+            Blood cannot be made in a lab
+        </div>
+
+        <div>
+            ❤️<br>
+            Your donation makes a real difference
+        </div>
+    </section>
+
+    <section class="details">
+
+        <div class="left">
+
+            <div class="section">
+                <h3>📅 DATE</h3>
+                <p>Saturday, June 15, 2026</p>
+            </div>
+
+            <div class="section">
+                <h3>🕒 TIME</h3>
+                <p>10:00 AM – 4:00 PM</p>
+            </div>
+
+            <div class="section">
+                <h3>📍 LOCATION</h3>
+                <p>
+                    Community Center<br>
+                    123 Main Street<br>
+                    Milton, ON
+                </p>
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <h2>WHO CAN DONATE?</h2>
+
+            <ul>
+                <li>16+ years old (with parental consent where applicable)</li>
+                <li>Weigh at least 110 lbs (50 kg)</li>
+                <li>In good general health</li>
+                <li>Bring a valid photo ID</li>
+            </ul>
+
+            <div class="notice">
+                <strong>Walk-ins Welcome!</strong><br>
+                Thank you for being a lifesaver.
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="footer">
+
+        <div>
+            <h2>GIVE BLOOD.<br>GIVE HOPE.</h2>
+        </div>
+
+        <div class="contact">
+            <p>📞 (555) 123-4567</p>
+            <p>🌐 www.yourblooddrive.org</p>
+        </div>
+
+    </section>
+
+</div>
+
+</body>
+</html>
