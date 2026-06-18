@@ -150,6 +150,118 @@ body {
 .contact {
     text-align: right;
 }
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Mobile Friendly */
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 0;
+    }
+
+    .poster {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    /* Top section */
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .hero-text h2 {
+        font-size: 1.4rem;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text p {
+        font-size: 1.4rem;
+    }
+
+    .blood-drop {
+        width: 140px;
+        height: 180px;
+        margin-top: 25px;
+    }
+
+    .blood-drop::after {
+        font-size: 45px;
+    }
+
+
+    /* Red information bar */
+    .red-banner {
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 15px;
+    }
+
+    .red-banner div {
+        max-width: 100%;
+        font-size: 0.95rem;
+    }
+
+
+    /* Details section */
+    .details {
+        flex-direction: column;
+        padding: 25px 20px;
+        gap: 25px;
+    }
+
+
+    .right h2 {
+        font-size: 1.4rem;
+    }
+
+
+    ul {
+        padding-left: 20px;
+    }
+
+
+    /* Appointment box */
+    .notice {
+        padding: 20px;
+        padding-left: 20px;
+    }
+
+    .notice ol li {
+        margin-bottom: 15px;
+    }
+
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 15px;
+    }
+
+    .footer h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+    .contact a {
+        color: white;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+}
 </style>
 </head>
 <body>
@@ -250,7 +362,12 @@ body {
 
         <div class="contact">
             <p>📞 (647) 687-9058</p>
-            <p>🌐 www.yourblooddrive.org</p>
+            <a href="https://www.instagram.com/ladyfatimahyouth?igsh=eXp5ejNlOW9pM3B6" target="_blank">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+			alt="Instagram"
+			style="width:30px;height:30px;vertical-align:middle;">
+			<span>ladyfatimahyouth</span>
+			</a>
         </div>
 
     </section>
