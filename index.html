@@ -59,7 +59,7 @@ body {
     font-style: italic;
 }
 
-.blood-drop {
+/*.blood-drop {
     width: 250px;
     height: 320px;
     background: #d61f26;
@@ -75,6 +75,17 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}*/
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cbs-logo {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
 }
 
 .red-banner {
@@ -179,7 +190,7 @@ body {
     }
 
     .hero-text h1 {
-        font-size: 3rem;
+         font-size: clamp(2rem, 12vw, 3rem);
     }
 
     .hero-text p {
@@ -261,6 +272,7 @@ body {
         gap: 8px;
     }
 
+
 }
 </style>
 </head>
@@ -275,7 +287,12 @@ body {
             <p>Save Lives</p>
         </div>
 
-        <div class="blood-drop"></div>
+        <div class="logo-container">
+    <img
+        src="canadian-blood-services-logo.png"
+        alt="Canadian Blood Services Logo"
+        class="cbs-logo">
+</div>
     </section>
 
     <section class="red-banner">
@@ -306,7 +323,7 @@ body {
 
             <div class="section">
                 <h3>🕒 TIME</h3>
-                <p>12:00 PM – 12:45 PM</p>
+                <p>12:00 AM – 12:45 PM</p>
             </div>
 
             <div class="section">
@@ -325,7 +342,9 @@ body {
             <h2>WHO CAN DONATE?</h2>
 
             <ul>
-                <li>17+ years old (with parental consent where applicable)</li>
+                <li>16+ years old (with parental consent where applicable)</li>
+                <li>Weigh at least 110 lbs (50 kg)</li>
+                <li>In good general health</li>
                 <li>Bring a valid photo ID</li>
             </ul>
 
